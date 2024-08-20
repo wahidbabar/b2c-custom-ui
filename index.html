@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2TRACE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="api">
+        <!-- Azure AD B2C will inject form elements here -->
+        <div class="login-container">
+            <h1>2TRACE</h1>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div contenteditable="true" id="email" name="email" class="input-div"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div contenteditable="true" id="password" name="password" class="input-div"></div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="keepLoggedIn" name="keepLoggedIn">
+                <label for="keepLoggedIn">Keep me logged in</label>
+            </div>
+            <div id="loginBtn" class="button">Login</div>
+            <p><a href="#" id="forgotPassword">Forgot Your Password?</a></p>
+            <p>Don't have an account? <a href="#" id="createAccount">Sign Up</a></p>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
